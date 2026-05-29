@@ -99,27 +99,27 @@
   obs.observe(cards[0].closest('section'));
 })();
 
-/* === TEAM CARDS stagger === */
+/* === FOUNDER CARD stagger === */
 (function () {
-  const cards = document.querySelectorAll('.team-card');
-  if (!cards.length) return;
+  const founderCard = document.querySelector('.founder-card-layout');
+  if (!founderCard) return;
 
-  cards.forEach(c => { c.style.opacity = '0'; c.style.transform = 'translateY(20px)'; c.style.transition = 'none'; });
+  founderCard.style.opacity = '0';
+  founderCard.style.transform = 'translateY(30px)';
+  founderCard.style.transition = 'none';
 
   const obs = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
-      cards.forEach((c, i) => {
-        setTimeout(() => {
-          c.style.transition = 'opacity 0.5s ease, transform 0.5s ease, border-color 0.25s ease, background 0.25s ease';
-          c.style.opacity = '1';
-          c.style.transform = 'none';
-        }, i * 120);
-      });
+      setTimeout(() => {
+        founderCard.style.transition = 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease';
+        founderCard.style.opacity = '1';
+        founderCard.style.transform = 'none';
+      }, 100);
       obs.disconnect();
     }
   }, { threshold: 0.1 });
 
-  obs.observe(cards[0].closest('section'));
+  obs.observe(founderCard.closest('section'));
 })();
 
 /* === PORTFOLIO ROWS stagger === */
@@ -457,22 +457,4 @@
   });
 })();
 
-/* === HERO VIDEO === */
-(function () {
-  const vid = document.getElementById('heroVideo');
-  const hero = document.getElementById('hero');
-  if (vid && hero) {
-    const playPromise = vid.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        // Auto-play was prevented; show grid immediately
-        vid.classList.add('fade-out');
-        hero.classList.add('show-grid');
-      });
-    }
-    vid.addEventListener('ended', () => {
-      vid.classList.add('fade-out');
-      hero.classList.add('show-grid');
-    });
-  }
-})();
+
