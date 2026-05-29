@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>aura.in — App & Game Development Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Privacy-first Analytics Placeholder -->
+  <script defer data-domain="aura.in" src="https://plausible.io/js/script.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo"><img src="IMG/logo.png" alt="aura.in" class="site-logo"
+          style="width: 119px;"></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#services">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#portfolio">Work</a>
+    <a href="#team">Team</a>
+    <a href="#services">Process</a>
+    <a href="#contact">Contact</a>
+    <a href="#waitlist" class="mobile-cta">Join Waitlist</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <video class="hero-video" id="heroVideo" src="IMG/bgvideo.mp4" autoplay muted playsinline></video>
+    <div class="hero-bg-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">App &amp; Game Studio &mdash; 2026</div>
+      <h1>We turn bold ideas<br /><span class="hero-accent">into real apps.</span></h1>
+      <p class="hero-sub">We build. We ship. We iterate.</p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-ghost">View Work</a>
+        <a href="#waitlist" class="btn btn-primary">Join Waitlist &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-layout">
+        <div class="about-left reveal">
+          <span class="section-tag">About</span>
+          <h2>Who we are</h2>
+          <p class="about-desc">A tight-knit studio that ships real products. No fluff, no bloated teams — just sharp
+            builders who care deeply about craft.</p>
+        </div>
+        <div class="about-right">
+          <div class="about-line reveal-line">We build.</div>
+          <div class="about-line reveal-line">We ship.</div>
+          <div class="about-line reveal-line">We iterate.</div>
+          <div class="about-line accent reveal-line">No noise. Just product.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE BUILD -->
+  <section id="what-we-build">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="section-tag">Craft</span>
+        <h2>What we build</h2>
+      </div>
+      <div class="services-cards">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" />
+            </svg>
+          </div>
+          <span class="service-num">01</span>
+          <h3>Mobile Apps</h3>
+          <p>Fast. Scalable. User-first. Built for real people, not demo slides.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+          </div>
+          <span class="service-num">02</span>
+          <h3>Games</h3>
+          <p>Playable. Addictive. Polished. We know what makes players stay.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" />
+            </svg>
+          </div>
+          <span class="service-num">03</span>
+          <h3>AI Tools</h3>
+          <p>Smart systems. Real impact. We cut through the hype and build what works.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="section-tag">Work</span>
+        <h2>Selected Work</h2>
+      </div>
+      <div class="portfolio-list">
+        <a href="#" class="project-row">
+          <div class="project-row-left">
+            <span class="project-index">01</span>
+            <div class="project-text">
+              <h3>HustleAI</h3>
+              <p>Real-time fitness tracker &mdash; 50K downloads in 3 months.</p>
+              <div class="tech-badges">
+                <span class="tech-badge" style="--tc:#61dafb;--tb:rgba(97,218,251,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#61dafb">
+                    <circle cx="12" cy="12" r="2.5" />
+                    <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1.5" />
+                    <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1.5"
+                      transform="rotate(60 12 12)" />
+                    <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1.5"
+                      transform="rotate(120 12 12)" />
+                  </svg>
+                  React Native
+                </span>
+                <span class="tech-badge" style="--tc:#3ecf8e;--tb:rgba(62,207,142,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3ecf8e" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg>
+                  Supabase
+                </span>
+                <span class="tech-badge" style="--tc:#f7941d;--tb:rgba(247,148,29,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#f7941d">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
+                  </svg>
+                  Firebase
+                </span>
+                <span class="tech-badge" style="--tc:#a259ff;--tb:rgba(162,89,255,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#a259ff" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <path d="M8 21h8M12 17v4" />
+                  </svg>
+                  Figma
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="project-row-right">
+            <span class="project-chip">Mobile App</span>
+            <span class="project-year">2025</span>
+            <span class="project-arr">&rarr;</span>
+          </div>
+        </a>
+        <a href="#" class="project-row">
+          <div class="project-row-left">
+            <span class="project-index">02</span>
+            <div class="project-text">
+              <h3>Mantra</h3>
+              <p>Indie space rogue-lite &mdash; Featured on App Store day one.</p>
+              <div class="tech-badges">
+                <span class="tech-badge" style="--tc:#fff;--tb:rgba(255,255,255,0.08)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  Unity
+                </span>
+                <span class="tech-badge" style="--tc:#2396F3;--tb:rgba(35,150,243,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2396F3" stroke-width="2">
+                    <path
+                      d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+                  </svg>
+                  C#
+                </span>
+                <span class="tech-badge" style="--tc:#ff6b35;--tb:rgba(255,107,53,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 8v4l3 3" />
+                  </svg>
+                  Steamworks
+                </span>
+                <span class="tech-badge" style="--tc:#4CAF50;--tb:rgba(76,175,80,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                  </svg>
+                  PlayFab
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="project-row-right">
+            <span class="project-chip">Game</span>
+            <span class="project-year">2025</span>
+            <span class="project-arr">&rarr;</span>
+          </div>
+        </a>
+        <a href="#" class="project-row">
+          <div class="project-row-left">
+            <span class="project-index">03</span>
+            <div class="project-text">
+              <h3>FitckeckAI</h3>
+              <p>AI writing assistant built for speed &mdash; 10K beta users.</p>
+              <div class="tech-badges">
+                <span class="tech-badge" style="--tc:#3776ab;--tb:rgba(55,118,171,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3776ab" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg>
+                  Python
+                </span>
+                <span class="tech-badge" style="--tc:#412991;--tb:rgba(65,41,145,0.15)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8a63d2" stroke-width="2">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3" />
+                  </svg>
+                  OpenAI
+                </span>
+                <span class="tech-badge" style="--tc:#FF4500;--tb:rgba(255,69,0,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FF4500" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <path d="M8 21h8M12 17v4" />
+                  </svg>
+                  FastAPI
+                </span>
+                <span class="tech-badge" style="--tc:#61dafb;--tb:rgba(97,218,251,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#61dafb">
+                    <circle cx="12" cy="12" r="2.5" />
+                    <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1.5" />
+                    <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61dafb" stroke-width="1.5"
+                      transform="rotate(60 12 12)" />
+                  </svg>
+                  React
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="project-row-right">
+            <span class="project-chip">AI Tool</span>
+            <span class="project-year">2024</span>
+            <span class="project-arr">&rarr;</span>
+          </div>
+        </a>
+        <a href="#" class="project-row">
+          <div class="project-row-left">
+            <span class="project-index">04</span>
+            <div class="project-text">
+              <h3>Progresso</h3>
+              <p>Micro-finance tool for Gen Z &mdash; Zero to revenue in 60 days.</p>
+              <div class="tech-badges">
+                <span class="tech-badge" style="--tc:#3178c6;--tb:rgba(49,120,198,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3178c6" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  </svg>
+                  TypeScript
+                </span>
+                <span class="tech-badge" style="--tc:#000;--tb:rgba(255,255,255,0.08)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg>
+                  Next.js
+                </span>
+                <span class="tech-badge" style="--tc:#3ecf8e;--tb:rgba(62,207,142,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3ecf8e" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg>
+                  Supabase
+                </span>
+                <span class="tech-badge" style="--tc:#7c5cfc;--tb:rgba(124,92,252,0.1)">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7c5cfc" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <path d="M8 21h8M12 17v4" />
+                  </svg>
+                  Stripe
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="project-row-right">
+            <span class="project-chip">Mobile App</span>
+            <span class="project-year">2024</span>
+            <span class="project-arr">&rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="section-inner">
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <span class="stat-number" data-target="5" data-suffix="+">5+</span>
+          <span class="stat-label">Products Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1" data-suffix="K+">1k+</span>
+          <span class="stat-label">Users Reached</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="71" data-suffix="%">71%</span>
+          <span class="stat-label">Retention</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="section-tag">People</span>
+        <h2>The team</h2>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-avatar" style="--av: #7c5cfc;">HJ</div>
+          <div class="team-info">
+            <h3>Harshit Jangid</h3>
+            <span class="team-role">Founder &amp; CEO</span>
+            <p class="team-bio">Visionary behind aura.in. Ships products obsessively. Believes the best ideas are still
+              unbuilt.</p>
+          </div>
+          <div class="team-socials">
+            <a href="#" class="team-social-link" aria-label="Twitter/X">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.858L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="team-social-link" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar" style="--av: #00c9a7;">PS</div>
+          <div class="team-info">
+            <h3>Purvi Sharma</h3>
+            <span class="team-role">Lead Designer</span>
+            <p class="team-bio">Turns blank screens into product gold. If it doesn't feel right, it doesn't ship. Design
+              is function.</p>
+          </div>
+          <div class="team-socials">
+            <a href="#" class="team-social-link" aria-label="Twitter/X">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.858L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="team-social-link" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar" style="--av: #ff6b6b;">RS</div>
+          <div class="team-info">
+            <h3>Ronak Sharma</h3>
+            <span class="team-role">Head of Engineering</span>
+            <p class="team-bio">Writes code that scales. Fixes bugs before they exist. Clean architecture is her
+              superpower.</p>
+          </div>
+          <div class="team-socials">
+            <a href="#" class="team-social-link" aria-label="GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </a>
+            <a href="#" class="team-social-link" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section id="socials">
+    <div class="section-inner reveal">
+      <span class="section-tag">Follow Us</span>
+      <h2>Join the journey</h2>
+      <p style="color: var(--text-mid); margin-top: 16px; font-size: 16px;">We share behind-the-scenes insights, product
+        teardowns, and development tips.</p>
+
+      <div class="social-links-grid">
+        <a href="#" target="_blank" class="social-hero-link social-inst">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          Instagram
+        </a>
+
+        <a href="#" target="_blank" class="social-hero-link social-yt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+            </path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+          </svg>
+          YouTube
+        </a>
+
+        <a href="#" target="_blank" class="social-hero-link social-wa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="services">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="section-tag">Process</span>
+        <h2>How we work</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Idea</h3>
+            <p>We dig into your concept, validate fast, cut what's unnecessary.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Design</h3>
+            <p>Wire. Prototype. Refine. Every pixel earns its place.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Build</h3>
+            <p>Clean code. Scalable architecture. Shipped on schedule.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Launch</h3>
+            <p>We go live. No soft launches. Full send.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h3>Grow</h3>
+            <p>Iterate on data. Optimize relentlessly. Never done.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="section-tag">Voices</span>
+        <h2>What people say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="quote">"Aura builds fast. Genuinely the fastest team I've worked with &mdash; and the output was
+            exceptional."</p>
+          <div class="quote-meta">
+            <div class="quote-av">EC</div>
+            <div class="quote-details">
+              <span class="quote-name">Early Client</span>
+              <span class="quote-role">Startup Founder</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="quote">"Clean execution. They understood what we needed before we even finished explaining it."</p>
+          <div class="quote-meta">
+            <div class="quote-av">BP</div>
+            <div class="quote-details">
+              <span class="quote-name">Beta Partner</span>
+              <span class="quote-role">Product Lead</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="quote">"Sharp thinking. Every decision was intentional. Rare to find that in a studio."</p>
+          <div class="quote-meta">
+            <div class="quote-av">FN</div>
+            <div class="quote-details">
+              <span class="quote-name">Founder Network</span>
+              <span class="quote-role">Investor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner reveal">
+      <div class="contact-layout">
+        <div class="contact-left">
+          <span class="section-tag">Contact</span>
+          <h2>Got an idea?<br />Let's talk.</h2>
+          <p>We take on a limited number of projects each quarter. If you have something worth building, reach out
+            early.</p>
+          <a href="mailto:[oneaura.in@gmail.com]" class="contact-email">oneaura.in@gmail.com</a>
+          <p class="contact-location">India &rarr; Global</p>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email</label>
+                <input type="email" id="femail" placeholder="your@email.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" rows="5" placeholder="Tell us about your idea..."></textarea>
+            </div>
+            <div class="form-group checkbox-group" style="margin-bottom: 24px;">
+              <label
+                style="display: flex; align-items: center; gap: 10px; cursor: pointer; text-transform: none; letter-spacing: normal;">
+                <input type="checkbox" id="fnewsletter" style="width: auto; padding: 0; margin: 0; outline: none;" />
+                <span style="font-size: 14px; color: var(--text-mid);">Get exclusive insights. Subscribe to our
+                  quarterly updates.</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message &rarr;</button>
+            <p class="form-success" id="formSuccess">Message sent. We'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST -->
+  <section id="waitlist">
+    <div class="section-inner reveal">
+      <div class="waitlist-inner">
+        <span class="section-tag">Waitlist</span>
+        <h2>Build with us.</h2>
+        <p>Limited slots open every quarter. Drop your email and we'll reach out when we're ready.</p>
+        <div class="waitlist-row">
+          <input type="email" id="waitlistEmail" placeholder="your@email.com" />
+          <button class="btn btn-primary" id="waitlistBtn"><span class="btn-text">Join &rarr;</span><span
+              class="spinner"></span></button>
+        </div>
+        <p class="waitlist-success" id="waitlistSuccess">You're on the list.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB ACTIVITY -->
+  <section id="github">
+    <div class="section-inner reveal">
+      <div class="section-header gh-header">
+        <div>
+          <span class="section-tag">Live Activity</span>
+          <h2>We ship. Constantly.</h2>
+        </div>
+        <a href="https://github.com" target="_blank" class="gh-profile-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
+          View on GitHub &rarr;
+        </a>
+      </div>
+      <div class="gh-grid">
+        <div class="gh-commits" id="ghCommits">
+          <!-- Commits populated by JS -->
+          <div class="gh-loading">
+            <div class="gh-spinner"></div>
+            <span>Loading activity...</span>
+          </div>
+        </div>
+        <div class="gh-sidebar">
+          <div class="gh-contrib-graph" id="ghGraph">
+            <!-- Contribution graph populated by JS -->
+          </div>
+          <div class="gh-stats-row">
+            <div class="gh-stat">
+              <span class="gh-stat-num" id="ghCommitCount">—</span>
+              <span class="gh-stat-lbl">Commits this month</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat-num" id="ghRepoCount">—</span>
+              <span class="gh-stat-lbl">Active repos</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat-num" id="ghStreak">—</span>
+              <span class="gh-stat-lbl">Day streak</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo"><img src="IMG/logo.png" alt="aura.in" class="site-logo"></a>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#portfolio">Work</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span id="copyYear">&copy; 2026 aura.in. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="#">Instagram</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+
+  <!-- COOKIE CONSENT -->
+  <div id="cookie-banner">
+    <div class="cookie-text">
+      <p>We use tracking cookies to understand how you interact with our website. By accepting, you agree to our use of
+        these cookies. <a href="#">Learn more</a>.</p>
+    </div>
+    <div class="cookie-buttons">
+      <button class="btn btn-ghost" id="cookieDecline">Decline</button>
+      <button class="btn btn-primary" id="cookieAccept">Accept</button>
+    </div>
+  </div>
+
+  <!-- MODAL CONTAINER -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected content -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

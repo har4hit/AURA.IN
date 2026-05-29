@@ -1,0 +1,10 @@
+{
+  "name": "aurain-website",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "npx clean-css-cli -o style.min.css style.css",
+    "build:js": "npx terser main.js -c -m -o main.min.js",
+    "build:html": "npx html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --use-short-doctype -o index.min.html aura-in-v4.html",
+    "build": "npm run build:css && npm run build:js && npm run build:html"
+  }
+}
