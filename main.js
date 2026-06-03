@@ -241,14 +241,13 @@
 
   // Realistic commit messages for a dev studio
   const fakeCommits = [
-    { repo: 'HustleAI-app', msg: 'feat: add real-time heart rate sync via BLE', time: '2 min ago', sha: 'a3f8c21' },
-    { repo: 'Mantra', msg: 'fix: enemy spawn rate overflow on level 9', time: '34 min ago', sha: 'b7e2d09' },
-    { repo: 'FitckeckAI-ai', msg: 'perf: reduce LLM latency by 40% with response streaming', time: '1 hr ago', sha: 'c1d4e87' },
-    { repo: 'Progresso', msg: 'feat: Stripe webhook handler for failed payments', time: '3 hr ago', sha: 'd9a1f33' },
-    { repo: 'aura.in', msg: 'chore: update design tokens + add dark mode vars', time: '5 hr ago', sha: 'e2b6c14' },
-    { repo: 'HustleAI-app', msg: 'test: add unit tests for nutrition API parser', time: '8 hr ago', sha: 'f4c8d92' },
-    { repo: 'FitckeckAI-ai', msg: 'feat: multi-language output support (ES, FR, DE)', time: '1 day ago', sha: 'g3e7b05' },
-    { repo: 'Mantra', msg: 'art: add procedural asteroid field shader', time: '1 day ago', sha: 'h6f1a28' },
+    { repo: 'Vishwakarma-ERP', msg: 'feat: optimize glass cutting layout algorithm', time: '2 min ago', sha: 'a3f8c21' },
+    { repo: 'HustleAI-app', msg: 'feat: add real-time heart rate sync via BLE', time: '34 min ago', sha: 'b7e2d09' },
+    { repo: 'Vishwakarma-ERP', msg: 'feat: add automatic PDF invoice generation stream', time: '1 hr ago', sha: 'f9c2d1b' },
+    { repo: 'Mantra', msg: 'fix: enemy spawn rate overflow on level 9', time: '2 hr ago', sha: 'c1d4e87' },
+    { repo: 'Progresso', msg: 'feat: Stripe webhook handler for failed payments', time: '4 hr ago', sha: 'e2b6c14' },
+    { repo: 'aura.in', msg: 'chore: update design tokens + add dark mode vars', time: '6 hr ago', sha: 'f4c8d92' },
+    { repo: 'Vishwakarma-ERP', msg: 'test: add integration tests for GST tax calculation pipeline', time: '1 day ago', sha: 'g3e7b05' },
   ];
 
   const svgCommit = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><line x1="3" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="21" y2="12"/></svg>`;
@@ -334,14 +333,18 @@
   // Simulate live updates — new commit every 25s
   setInterval(() => {
     const newCommit = {
-      repo: ['HustleAI-app', 'Mantra', 'FitckeckAI-ai', 'Progresso'][Math.floor(Math.random() * 4)],
+      repo: ['Vishwakarma-ERP', 'HustleAI-app', 'Mantra', 'Progresso'][Math.floor(Math.random() * 4)],
       msg: [
+        'fix: calculation edge case in GST tax rules',
+        'feat: add PDF export stream for invoices',
+        'refactor: optimize glass cutting layout algorithm',
+        'perf: speed up order query response time',
+        'feat: add role-based permission gates',
         'fix: edge case in auth token refresh',
         'feat: add haptic feedback on swipe',
         'refactor: clean up dead code in parser',
         'perf: lazy load heavy components',
-        'feat: new onboarding flow v2',
-      ][Math.floor(Math.random() * 5)],
+      ][Math.floor(Math.random() * 9)],
       time: 'just now',
       sha: Math.random().toString(36).substr(2, 7),
     };
@@ -456,5 +459,63 @@
     }
   });
 })();
+
+
+/* === TOOLKIT HOVER EFFECT === */
+(function () {
+  const cards = document.querySelectorAll('.toolkit-card');
+  cards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--x', `${x}px`);
+      card.style.setProperty('--y', `${y}px`);
+    }, { passive: true });
+  });
+})();
+
+
+/* === PROCESS TIMELINE PROGRESS === */
+(function () {
+  const container = document.querySelector('.process-timeline-container');
+  const progress = document.querySelector('.timeline-progress');
+  if (!container || !progress) return;
+
+  const steps = document.querySelectorAll('.process-step');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Stagger steps reveal
+        steps.forEach((step, i) => {
+          setTimeout(() => {
+            step.style.opacity = '1';
+            step.style.transform = 'none';
+          }, i * 150);
+        });
+        
+        // Animate progress line
+        setTimeout(() => {
+          progress.style.width = '100%';
+          progress.style.height = '100%';
+        }, 300);
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  observer.observe(container);
+  
+  // Set initial state for animate in
+  steps.forEach(step => {
+    step.style.opacity = '0';
+    step.style.transform = 'translateY(20px)';
+    step.style.transition = 'all 0.6s var(--ease), border-color var(--t) var(--ease), background var(--t) var(--ease), box-shadow var(--t) var(--ease)';
+  });
+})();
+
+
 
 
