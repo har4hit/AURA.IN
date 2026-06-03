@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://aura.in/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://aurain.netlify.app/</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://aurain.netlify.app/IMG/founder.png</image:loc>
+      <image:title>Harshit Jangid (har4hit) - Founder &amp; CEO of Aura</image:title>
+      <image:caption>Harshit Jangid, widely known online as har4hit, is the founder and CEO of Aura.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aurain.netlify.app/IMG/logo.png</image:loc>
+      <image:title>Aura Logo</image:title>
+      <image:caption>Aura - Premium Mobile App and Game Studio by Harshit Jangid (har4hit)</image:caption>
+    </image:image>
   </url>
 </urlset>

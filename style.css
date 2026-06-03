@@ -2531,3 +2531,16 @@ h3 {
 .gh-commit-item.new-item {
   animation: slideDownGH 0.4s var(--ease) forwards;
 }
+
+/* Screen-reader and crawler only (visually hidden) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
