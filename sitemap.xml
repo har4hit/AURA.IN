@@ -3,18 +3,50 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://aurain.netlify.app/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-26</lastmod>
     <image:image>
-      <image:loc>https://aurain.netlify.app/IMG/founder.png</image:loc>
-      <image:title>Harshit Jangid (har4hit) - Founder &amp; CEO of Aura</image:title>
-      <image:caption>Harshit Jangid, widely known online as har4hit, is the founder and CEO of Aura.</image:caption>
+      <image:loc>https://aurain.netlify.app/IMG/og.jpg</image:loc>
+      <image:title>Aura — apps, games and software</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://aurain.netlify.app/IMG/logo.png</image:loc>
-      <image:title>Aura Logo</image:title>
-      <image:caption>Aura - Premium Mobile App and Game Studio by Harshit Jangid (har4hit)</image:caption>
+      <image:loc>https://aurain.netlify.app/IMG/icon.png</image:loc>
+      <image:title>Aura logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://aurain.netlify.app/work/erp.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <image:image>
+      <image:loc>https://aurain.netlify.app/IMG/p-erp.webp</image:loc>
+      <image:title>Vishwakarma Tuff ERP</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aurain.netlify.app/IMG/erp-dashboard.webp</image:loc>
+      <image:title>Vishwakarma Tuff ERP</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://aurain.netlify.app/work/grow.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <image:image>
+      <image:loc>https://aurain.netlify.app/IMG/p-grow.webp</image:loc>
+      <image:title>Grow AI</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://aurain.netlify.app/work/mantra.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <image:image>
+      <image:loc>https://aurain.netlify.app/IMG/p-mantra.webp</image:loc>
+      <image:title>Mantra</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://aurain.netlify.app/work/progresso.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <image:image>
+      <image:loc>https://aurain.netlify.app/IMG/p-progresso.webp</image:loc>
+      <image:title>Progresso</image:title>
     </image:image>
   </url>
 </urlset>

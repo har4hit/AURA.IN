@@ -5,9 +5,12 @@
 /* === NAVBAR scroll === */
 (function () {
   const nav = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 30);
-  }, { passive: true });
+  // nav turns light once it leaves the black hero
+  const hero = document.getElementById('hero') || document.querySelector('.notfound');
+  if (!hero) { nav.classList.add('scrolled'); return; } // light pages (work/*.html) have no dark hero
+  const update = () => nav.classList.toggle('scrolled', window.scrollY > hero.offsetHeight - nav.offsetHeight);
+  window.addEventListener('scroll', update, { passive: true });
+  update();
 })();
 
 /* === HAMBURGER menu === */
@@ -35,11 +38,11 @@
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const id = a.getAttribute('href');
-      if (id === '#') return;
+      if (id === '#' || id.includes('/')) return; // '#project/x' is handled by projects.js
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();
-      const offset = 70;
+      const offset = 72;
       window.scrollTo({ top: target.getBoundingClientRect().top + scrollY - offset, behavior: 'smooth' });
     });
   });
@@ -187,13 +190,28 @@
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    setTimeout(() => {
-      form.reset();
-      btn.textContent = 'Send Message →';
-      btn.disabled = false;
-      success.classList.add('show');
-      setTimeout(() => success.classList.remove('show'), 5000);
-    }, 1000);
+    // Netlify Forms: POST the form fields to the site root
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    })
+      .then(res => {
+        if (!res.ok) throw new Error(res.status);
+        form.reset();
+        success.textContent = "Message sent. We'll be in touch soon.";
+        success.classList.remove('error');
+      })
+      .catch(() => {
+        success.textContent = 'Could not send. Please email oneaura.in@gmail.com.';
+        success.classList.add('error');
+      })
+      .finally(() => {
+        btn.textContent = 'Send message';
+        btn.disabled = false;
+        success.classList.add('show');
+        setTimeout(() => success.classList.remove('show'), 6000);
+      });
   });
 })();
 
@@ -381,7 +399,7 @@
     // Update countEl to simulate live activity
     const current = parseInt(countEl.textContent) || 47;
     countEl.textContent = current + 1;
-    countEl.style.color = 'var(--accent-light)';
+    countEl.style.color = 'var(--magenta)';
     setTimeout(() => { countEl.style.color = ''; }, 1000);
 
   }, 25000);

@@ -1,0 +1,21 @@
+# Aura (aura.in)
+
+> Aura is an app, game and software studio in India, founded and run by Harshit Jangid (online: har4hit). It designs, builds and launches mobile apps, games, custom business software and AI tools for founders and businesses in India and worldwide.
+
+- Website: https://aurain.netlify.app/
+- Founder: Harshit Jangid (har4hit) — https://github.com/har4hit
+- Contact: oneaura.in@gmail.com
+
+## Work
+
+- [Vishwakarma Tuff ERP](https://aurain.netlify.app/work/erp.html): custom ERP for a glass factory — order pipeline, cutting, fabrication and toughening tracking, automated invoicing (web, 2026).
+- [Grow AI](https://aurain.netlify.app/work/grow.html): real-time fitness tracker for iOS and Android, 50K downloads in its first 3 months (2025).
+- [Mantra](https://aurain.netlify.app/work/mantra.html): horror game rooted in Indian folklore, built in Unity, featured on the App Store on launch day (2025).
+- [Progresso](https://aurain.netlify.app/work/progresso.html): micro-finance web app for Gen Z built with Next.js and Stripe, revenue within 60 days (2024).
+
+## Services
+
+- Mobile apps (React Native, iOS and Android)
+- Games (Unity, C#)
+- Custom software: ERPs, SaaS, internal tools (Next.js, Node.js, TypeScript, Supabase)
+- AI tools: LLM features, agents, automations
